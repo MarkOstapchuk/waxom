@@ -15,6 +15,70 @@
   font-style: normal;
   font-display: block;
 }
+.icon-megaphone:before {
+  content: "";
+}
+
+.icon-heart:before {
+  content: "";
+}
+
+.icon-love:before {
+  content: "";
+}
+
+.icon-like:before {
+  content: "";
+}
+
+.icon-message-circle:before {
+  content: "";
+}
+
+.icon-cheveron-left:before {
+  content: "";
+}
+
+.icon-cheveron-right:before {
+  content: "";
+}
+
+.icon-coffee:before {
+  content: "";
+}
+
+.icon-shopping-bag:before {
+  content: "";
+}
+
+.icon-pencil2:before {
+  content: "";
+}
+
+.icon-files-empty:before {
+  content: "";
+}
+
+.icon-stack:before {
+  content: "";
+}
+
+.icon-user:before {
+  content: "";
+}
+
+.icon-search:before {
+  content: "";
+}
+
+.icon-cog:before {
+  content: "";
+}
+
+.icon-play2:before {
+  content: "";
+}
+
 [class^=icon-],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -37,6 +101,7 @@
   list-style-type: none;
   text-decoration: none;
   outline: none;
+  font-family: "montserrat", sans-serif;
 }
 
 .header {
@@ -93,14 +158,12 @@
 }
 
 .icon-search:before {
-  content: "";
   font-size: 20px;
   margin-left: 28px;
   cursor: pointer;
 }
 
 .icon-basket:before {
-  content: "";
   font-size: 20px;
   cursor: pointer;
 }
@@ -115,6 +178,8 @@
 .slider-text-3 {
   text-align: center;
   font-family: "railway", sans-serif;
+  max-width: 70%;
+  margin: 0 auto;
 }
 
 .slider-text-3 {
@@ -188,4 +253,63 @@
   cursor: pointer;
   font-size: 100px;
   color: #d3c1ad;
+}
+
+.development .container {
+  max-width: 1230px;
+  width: auto;
+  margin: 0 auto;
+  padding: 80px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dev {
+  max-width: 23%;
+}
+
+.dev * {
+  cursor: default;
+}
+
+.dev-icon {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.dev-icon:before {
+  color: #555;
+  font-size: 40px;
+}
+
+.dev-title {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 22px;
+  color: #555;
+}
+
+.dev-text {
+  font-size: 14px;
+  color: #8c8c8c;
+  max-width: 270px;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 24px;
+}
+
+.dev-line {
+  width: 70px;
+  height: 3px;
+  background: #f1eee9;
+  margin: 0 auto;
+}
+
+.dev:hover > .dev-title,
+.dev:hover > .dev-icon:before {
+  color: #c7b299;
+}
+
+.dev:hover > .dev-line {
+  background: #c7b299;
 }

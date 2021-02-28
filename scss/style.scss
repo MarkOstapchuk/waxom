@@ -19,6 +19,54 @@
   font-style: normal;
   font-display: block;
 }
+.icon-megaphone:before {
+  content: '\e907';
+}
+.icon-heart:before {
+  content: '\e903';
+}
+.icon-love:before {
+  content: '\e903';
+}
+.icon-like:before {
+  content: '\e903';
+}
+.icon-message-circle:before {
+  content: '\e904';
+}
+.icon-cheveron-left:before {
+  content: '\e902';
+}
+.icon-cheveron-right:before {
+  content: '\e901';
+}
+.icon-coffee:before {
+  content: '\e905';
+}
+.icon-shopping-bag:before {
+  content: '\e900';
+}
+.icon-pencil2:before {
+  content: '\e906';
+}
+.icon-files-empty:before {
+  content: '\e925';
+}
+.icon-stack:before {
+  content: '\e92e';
+}
+.icon-user:before {
+  content: '\e971';
+}
+.icon-search:before {
+  content: '\e986';
+}
+.icon-cog:before {
+  content: '\e994';
+}
+.icon-play2:before {
+  content: '\ea15';
+}
 
 [class^='icon-'],
 [class*=' icon-'] {
@@ -42,6 +90,7 @@
   list-style-type: none;
   text-decoration: none;
   outline: none;
+  font-family: $ffm;
 }
 .header {
   background-image: url('./../images/headerbg.jpg');
@@ -88,13 +137,11 @@
   font-family: $ffm;
 }
 .icon-search:before {
-  content: '\e986';
   font-size: 20px;
   margin-left: 28px;
   cursor: pointer;
 }
 .icon-basket:before {
-  content: '\e900';
   font-size: 20px;
   cursor: pointer;
 }
@@ -107,6 +154,8 @@
 .slider-text-3 {
   text-align: center;
   font-family: $ffr;
+  max-width: 70%;
+  margin: 0 auto;
 }
 .slider-text-3 {
   font-size: 16px;
@@ -171,4 +220,56 @@
   cursor: pointer;
   font-size: 100px;
   color: #d3c1ad;
+}
+
+// --------development--------
+
+.development .container {
+  max-width: 1230px;
+  width: auto;
+  margin: 0 auto;
+  padding: 80px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.dev {
+  max-width: 23%;
+}
+.dev * {
+  cursor: default;
+}
+.dev-icon {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.dev-icon:before {
+  color: #555;
+  font-size: 40px;
+}
+.dev-title {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 22px;
+  color: #555;
+}
+.dev-text {
+  font-size: 14px;
+  color: #8c8c8c;
+  max-width: 270px;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 24px;
+}
+.dev-line {
+  width: 70px;
+  height: 3px;
+  background: #f1eee9;
+  margin: 0 auto;
+}
+.dev:hover > .dev-title,
+.dev:hover > .dev-icon:before {
+  color: #c7b299;
+}
+.dev:hover > .dev-line {
+  background: #c7b299;
 }
